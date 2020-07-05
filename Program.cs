@@ -42,10 +42,7 @@ namespace Rock_Paper_Scissors_console_game
                 if (computer == "r") Console.WriteLine("Computer chose Rock!");
                 else if (computer == "p") Console.WriteLine("Computer chose Paper!");
                 else Console.WriteLine("Computer chose Scissors!");
-                if (user == "r" && computer == "r") Console.WriteLine("Tie!");
-                else if (user == "p" && computer == "p") Console.WriteLine("Tie!");
-                else if (user == "s" && computer == "s") Console.WriteLine("Tie!");
-
+                if (user == computer) Console.WriteLine("Tie!");
                 else if (user == "r" && computer == "s")
                 {
                     userWins++;
